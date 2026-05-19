@@ -1,0 +1,28 @@
+# Virtual Environment
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Jupyter files
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+
+# data/
+# *.csv
+
+# data/final_dataset.csv
+# models/yield_model.pkl
+# models/soil_model.pkl
+
+
+testing_code/
