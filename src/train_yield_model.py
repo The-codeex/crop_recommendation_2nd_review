@@ -237,29 +237,29 @@ print(f"Testing samples  : {X_test.shape[0]}")
 # Model Definition
 # -------------------------------
 
-# model = XGBRegressor(
-#     n_estimators=900,
-#     learning_rate=0.025,
-#     max_depth=7,
-#     subsample=0.85,
-#     colsample_bytree=0.85,
-#     gamma=0.15,
-#     min_child_weight=4,
-#     reg_alpha=0.3,
-#     reg_lambda=1.2,
-#     random_state=42,
-#     n_jobs=-1
-# )
-model =  GradientBoostingRegressor(
+model = XGBRegressor(
+    n_estimators=900,
+    learning_rate=0.025,
+    max_depth=7,
+    subsample=0.85,
+    colsample_bytree=0.85,
+    gamma=0.15,
+    min_child_weight=4,
+    reg_alpha=0.3,
+    reg_lambda=1.2,
+    random_state=42,
+    n_jobs=-1
+)
+# model =  GradientBoostingRegressor(
 
-        n_estimators=300,
+#         n_estimators=300,
 
-        learning_rate=0.05,
+#         learning_rate=0.05,
 
-        max_depth=6,
+#         max_depth=6,
 
-        random_state=42
-    )
+#         random_state=42
+#     )
 
 
 # -------------------------------

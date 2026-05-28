@@ -8,6 +8,10 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import mean_squared_error, r2_score
 
 from xgboost import XGBRegressor
+from sklearn.ensemble import (
+    RandomForestRegressor,
+    
+)
 import joblib
 
 
@@ -176,30 +180,42 @@ X_train, X_test, y_train, y_test = train_test_split(
 # Model Definition (balanced)
 # ------------------------------
 
-model = XGBRegressor(
+# model = XGBRegressor(
 
-    n_estimators=500,
+#     n_estimators=500,
 
-    learning_rate=0.03,
+#     learning_rate=0.03,
 
-    max_depth=5,
+#     max_depth=5,
 
-    subsample=0.8,
+#     subsample=0.8,
 
-    colsample_bytree=0.8,
+#     colsample_bytree=0.8,
 
-    min_child_weight=5,
+#     min_child_weight=5,
 
-    gamma=0.3,
+#     gamma=0.3,
 
-    reg_alpha=0.8,
+#     reg_alpha=0.8,
 
-    reg_lambda=2.0,
+#     reg_lambda=2.0,
 
-    random_state=42,
+#     random_state=42,
 
-    n_jobs=-1
-)
+#     n_jobs=-1
+# )
+
+model =  RandomForestRegressor(
+
+        n_estimators=300,
+
+        max_depth=18,
+
+        random_state=42,
+
+        n_jobs=-1
+    )
+
 # ------------------------------
 # Training
 # ------------------------------
